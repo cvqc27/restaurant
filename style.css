@@ -23,10 +23,11 @@ header{
     width: 58%;
     height: 75%;
     background: #fff;
-    box-shadow: 0px, 0px, 50px, -1px, rgb(0, 0, 0,.5);
+    box-shadow: 0px, 0px, 5px, -1px, rgb(0, 0, 0,.5);
     padding: 0px, 30px;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
     
 }
 
@@ -36,7 +37,7 @@ header .logo{
     left: 10%;
     width: 250px;
     height: 350px;
-    background: #282828;
+    background: #000;
     transition: 1s linear;
 }
 header .logo h1{
@@ -50,14 +51,14 @@ header .logo h1{
 
 header .logo img{
     width: 250px;
-    margin: 20px, 0px, 0px, -30px;
+    margin: 20px, 0px, 00px, -30px;
     filter: drop-shadow(0px 0px 20px rgb(0,0,0,.6));
     
 }
 header nav{
-    width: 100%;
+    width: 98%;
     height: 10%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,7 +92,7 @@ header nav .right_menu ul li a{
     text-decoration: none;
     font-size: 11px;
     font-weight: 600;
-    color: #000;
+    color: #0e0d0d;
     transition: .3s linear;   
     
 }
@@ -118,12 +119,13 @@ header nav .right_menu ul li a:hover::before{
 }
 
 header .right_menu .user_cart{
-    margin-left: 50px;
+    margin-left: 0;
     display: flex;
     align-items: center;
 }
 
-header .right_menu .user_cart img{
+
+header .right_menu .user_cart .user{
     position: relative;
     width: 17px;
     height: 17px;
@@ -131,17 +133,107 @@ header .right_menu .user_cart img{
     margin-left: 10px;
 }
 
+header .right_menu .user_cart .user img{
+    width: 100%;
 
 
+}
+header .right_menu .user_cart .user::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #dc1313;
+    border-radius: 50%;
+    top: 0%;
+    right: 0%;
+    z-index: 9999;
+
+}
 
 header .left_menu{
     width: 20px;
     height: 90%;
-    /* border: 1px solid red; */
+    /* border: 1px solid red;  */
+}
+
+header .left_menu{
+    width: 20px;
+    height: 90%;
+    /* border: 1px solid red;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+header .left_menu a{
+    margin: 30px 0px;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-size: 10px;
+    /* color: #000; */
+    font-weight: 600;
+    transition: .3s linear;
+    transform: rotate(-90deg);
+}
+
+header.left_menu a:hover{
+    color:#a51313 ;
+    
 }
 
 header section{
     width: 97%;
     height: 90%;
     /*border: 1px solid greenyellow;*/
+}
+
+header section .content{
+    position: relative;
+    left: 370px;
+    margin-top: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: 1s linear;
+    
+}
+
+header section .content h1{
+    font-size: 40px;
+    transition: 1s linear;
+}
+
+header section .content p{
+    font-size: 10px;
+    font-weight: 600;
+    width: 290px;
+    word-break: break-all;
+}
+
+header section .content .price_order{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+header section .content .price_order .price h2{
+    font-size: 20px;
+    color: #dc1313;
+    line-height: 18px;
+}
+header section .content .price_order .price p{
+    font-size: 5.5px;
+    width: 50px;
+}
+header section .content .price_order a{
+    padding: 4px 28px;
+    background: #121213;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 35px;
 }
