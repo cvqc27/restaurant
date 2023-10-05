@@ -380,20 +380,20 @@ header section .social .icons a.bi:hover{
     
 }
 
-@media  and (max-width: 1260px) {
+/* @media  and (max-width: 1260px) {
     header {
         width: 83%;
     }
     
-}
+} */
 
-@media  and (max-width: 885px) {
+/* @media  and (max-width: 885px) {
     header {
         width: 95%;
     }
     
-}
-@media  and (max-width: 885px) {
+} */
+/* @media  and (max-width: 885px) {
     header .logo{
         left: 13%;
     }
@@ -403,5 +403,5 @@ header section .social .icons a.bi:hover{
     }
     
     
-}
+} */
 
