@@ -11,7 +11,7 @@ html{
 }
 body{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background: #dedede;
     display: flex;
     align-items: center;
@@ -237,3 +237,171 @@ header section .content .price_order a{
     font-size: 14px;
     margin-left: 35px;
 }
+
+header section .cards{
+    width: 90%;
+    height: 120px;
+    /* border: 1px solid #000; */
+    position: relative;
+    top: 15%;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+    scroll-behavior: smooth;
+    transition: 1s linear;
+}
+header section .cards::-webkit-scrollbar{
+    display: none;
+       
+}
+
+header section .cards .card{
+    position: relative;
+    min-width: 125px;
+    min-height: 125px;
+    border: 1px solid #000;
+    margin-right: 13px;
+    background: #282828;
+    border-radius: 50px 10px 10px 10px;
+        
+}
+header section .cards .card:nth-last-child(1){
+    margin-right: 0px;       
+}
+
+header section .cards .card .dis{
+    width: 70px;
+    position: relative;
+    top: -5px;
+    left: -5px;
+
+}
+
+header section .cards .card .steam{
+    width: 60px;
+    position: absolute;
+    top: -35px;
+    left: -5px;
+
+}
+
+header section .cards .card h4{
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+header section .cards .card h5{
+    color: #fff;
+    font-size: 11px;
+    font-family: 500;
+    padding: 0px 10px;
+    margin-top: -8px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+header section .cards .card p{
+    color: rgb(203, 203, 203);
+    font-size: 9px;
+    font-weight: 500;
+    padding: 0px 10px;
+}
+
+header section .cards .card .rate_cart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    color: #fff;
+}
+
+header section .cards .card .rate_cart h6{
+    font-size: 10px;
+}
+header section .cards .card .rate_cart .bi{
+    font-size: 12px;
+    
+}
+
+header section .social{
+    position: relative;
+    width: 100%;
+    /* border: 1px solid #000; */
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s linear;
+}
+
+header section .social .btns{
+    margin-left: 30px;
+    
+}
+header section .social .btns bi{
+    font-size: 13px;
+    cursor: pointer;
+    transition: .3s linear;
+    
+}
+
+header section .social .btns .bi:hover{
+    color: rgb(0, 0, 0,.5);
+    
+}
+
+header section .social .icons{
+    display: flex;
+    align-items: center;
+    
+}
+
+header section .social .icons a{
+    font-size: 12px;
+    margin-left: 10px;
+    color: #282828;
+    transition: .3s linear;
+    
+}
+
+header section .social .icons a.bi:hover{
+    color: #000;
+    
+}
+
+@media  and (max-width: 1260px) {
+    header {
+        width: 83%;
+    }
+    
+}
+
+@media  and (max-width: 885px) {
+    header {
+        width: 95%;
+    }
+    
+}
+@media  and (max-width: 885px) {
+    header .logo{
+        left: 13%;
+    }
+
+    header section .content{
+        left: 320px;
+    }
+    
+    
+}
+
